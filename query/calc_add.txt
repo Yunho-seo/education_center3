@@ -1,0 +1,7 @@
+calc_add (저장 함수)
+
+BEGIN
+	DECLARE add_value INT;
+	SET add_value = FIRST + SECOND;
+	RETURN add_value;
+END

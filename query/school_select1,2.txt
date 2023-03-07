@@ -1,0 +1,12 @@
+school_select (저장 프로시저)
+
+BEGIN
+	SELECT * FROM school;
+END
+
+
+school_select2 (저장 프로시저)
+
+BEGIN
+	SELECT * FROM school WHERE schoolname = schoolinname;
+END

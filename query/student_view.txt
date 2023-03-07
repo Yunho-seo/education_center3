@@ -1,0 +1,4 @@
+student_view (뷰)
+
+SELECT NAME, st.kor, st.mat, st.eng, st.total, st.average, sc.schoolname, sc.address FROM student st,
+	school sc WHERE st.schoolcode = sc.schoolcode AND sc.schoolcode = 'CH00000001' 

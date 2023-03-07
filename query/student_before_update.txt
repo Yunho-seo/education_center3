@@ -1,0 +1,17 @@
+student_before_update (트리거)
+테이블 : student
+이벤트 : Before update
+
+BEGIN
+# insert into, update set, delete from
+	SET NEW.total = NEW.kor + NEW.mat + NEW.eng;
+	SET NEW.average = ROUND(NEW.total/3, 2);
+	
+	if NEW.average >= 90 then SET NEW.grade = 'A';
+	ELSEif NEW.average >= 80 then SET NEW.grade = 'B';
+	ELSEif NEW.average >= 70 then SET NEW.grade = 'C';
+	ELSEif NEW.average >= 60 then SET NEW.grade = 'D';
+	ELSE 									SET NEW.grade = 'F';
+	END if;
+
+END

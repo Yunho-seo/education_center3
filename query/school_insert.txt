@@ -1,0 +1,15 @@
+school_insert (저장 프로시저)
+
+BEGIN
+	DECLARE exit handler FOR SQLEXCEPTION		# callback function
+	BEGIN 
+		ROLLBACK;	-- transaction
+		SET result = -1;
+	END;
+	
+	START TRANSACTION;
+		INSERT INTO school(schoolname, address, schoolcode, studentcount)
+		VALUES(scname, addr, sccode, stcount);
+		COMMIT;
+		SET result = 0;
+END
