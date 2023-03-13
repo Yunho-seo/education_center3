@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	 a{text-decoration:none;}
+	 a:hover{test-decoration:underline;}
+	 a:link{color:#FF0000;}
+	 a:visited{color:green;}
+</style>
+</head>
+<body>
+<form action="loginAction">
+<table>
+	<tr>
+		<td><label for="email">이메일</label></td>
+		<td><input type="text" id="email" name="email"/></td>
+	</tr>	
+	<tr>
+		<td><label for="pwd">비밀번호</label></td>
+		<td><input type="password" id="pwd" name="pwd"/></td>
+	</tr>
+	<tr><td></td><td>
+	<fieldset>
+		<legend>취미 정보 선택</legend>
+	
+		<label>
+			<input type="checkbox" name="hobby" value="tennis"/>
+			테니스	
+		</label>
+		<label>
+			<input type="checkbox" name="hobby" value="piano"/>
+			피아노
+		</label>
+		<label>
+			<input type="checkbox" name="hobby" value="etc"/>
+			기타등등
+		</label>
+	</fieldset>
+</td></tr>
+	<tr>
+		<td><label for="job">직업 선택</label><br/></td>
+		<td><select name="job" id="job"> <!-- id는 웹페이지 구문, name은 서버측에서 사용 -->
+			<option value="">선택</option>
+			<option value="teacher">선생님</option>
+			<option value="doctor">의사</option>
+			<option value="programmer">프로그래머</option>
+			<option value="etc">기타</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><label for="pic">첨부파일(사진)</label></td>
+		<td><input type="file" id="pic" name="pic"/></td>
+	</tr>
+	<tr>
+		<td><label for="comment">하고싶은 말</label></td>
+		<td><textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+		</td>
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td><button type="submit">로그인</button></td> <!-- request / response -->
+</table>
+</form>
+	<a href="hello.html">hello</a><!-- 상대경로 -->
+	<a href="http://daum.net">daum</a><!-- 절대경로 -->
+</body>
+</html>

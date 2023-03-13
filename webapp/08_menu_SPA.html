@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <style>
+		.divdistance{
+			height: 500px;
+		}
+		
+		table, th, td {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+  		}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#one">첫페이지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#two">둘째페이지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#three">셋째페이지</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+	<p id="start"> 메뉴 </p>
+	
+	<div class="divdistance" background-color=yellow></div>
+	<p id="one"> 첫페이지 : SPA(Single page application)로 프로그래밍할 때 좋음
+		: 이모지도 좋음
+	</p>
+	<p style="font-size:48px">
+	&#128512; &#128516; &#128525; &#128151;
+	</p>
+	<a href="#start">메뉴로</a>
+
+	<div class="divdistance" background-color=yellow></div>
+	<br id="two">
+	<br>
+	<br>
+	<p> 두번째 페이지 : 리스트 예
+		<ol id="one">
+			<li>첫째</li>
+			<li>둘째</li>
+			<li>셋째</li>
+		</ol>
+	</p>
+	<a href="#start">메뉴로</a>
+	
+	<div class="divdistance" background-color=yellow></div>
+	<p id="three"> 세번째 페이지 : 테이블 예
+	<table style="width:100%">
+	  <tr>
+	    <th colspan="2">Name</th>
+	    <th>Age</th>
+	  </tr>
+	  <tr>
+	    <td>Jill</td>
+	    <td>Smith</td>
+	    <td>43</td>
+	  </tr>
+	  <tr>
+	    <td>Eve</td>
+	    <td>Jackson</td>
+	    <td>57</td>
+	  </tr>
+</table>
+<a href="#start">메뉴로</a>
+
+</body>
+</html>

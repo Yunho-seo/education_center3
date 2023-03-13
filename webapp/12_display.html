@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#one{
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<h1> display 속성 테스트 </h1>
+	<button id="showBtn">눌러보셈</button>
+	<button id="hideBtn">없어져</button>
+	<p id="one"> 한국타이어 대전공장 대규모 화재로 타이어 40만여개가 전소되면서 손해보험사 추정 손해 배상액이 1조7000억원을 넘어섰다.
+	</p>
+		<img src = "images/gom.jpg" />
+	<script>
+		document.querySelector("#showBtn").addEventListener("click", function(){
+			document.querySelector("#one").style.display="block";
+		});
+		
+		document.querySelector("#hideBtn").addEventListener("click", function(){
+			document.querySelector("#one").style.display="none";
+		});
+	</script>
+</body>
+</html>
