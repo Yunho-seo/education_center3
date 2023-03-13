@@ -7,3 +7,5 @@
 03.09 => student 테이블 프로시저, 연습문제(첨부X), BBK 데이터베이스 쿼리작성, Tomcat 설치, Oracle 설치, oracle 실습(scott 사용자(DB))
 
 03.10 => Oracle 실습 (SQL 문제 및 문법 익히기)
+
+03.13 => HTML 익히기, 실습, 응용(자기소개 과제)
