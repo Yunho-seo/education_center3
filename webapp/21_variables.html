@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Variables </title>
+</head>
+<body>
+<script>
+
+	// var(전역변수), let(블록범위 제한)
+	// hoisting 문제, 블록 범위로 제한하기 위해 let을 만듬
+	let num1 = 10;		// 자바스크립트는 숫자를 number로 다룬다.
+	let num2 = 10.1;
+
+	let myName = '대한민국';
+	let yourName = "희망이";
+	
+	let isRun = true;
+	let isWait = false;
+	let isGreater = 10 > 5;
+	
+	console.log(typeof(num1));			// 데이터 타입을 확인
+	console.log(typeof(num2));
+	console.log(typeof(isGreater));
+	
+	
+	let obj = {};	// 객체 초기화
+	let mem = { num:1, name:"대한민국", isMan:true };	// dictionary 형태로 데이터를 지정
+	let names = ["대한이", "민국이", "만세"];		// 배열, 배열도 하나의 객체 -> Array 객체 - 추가도 가능
+	let f2 = function() {		// 함수는 1급 객체 (변수에 대입, 함수의 매개변수로 전달, 함수의 리턴값으로도 가능)
+		console.log('하나');
+		console.log('둘');
+		console.log('셋');
+	};
+	console.log(names.toString());		// 클래스로 생성이 되어 함수 호출
+	console.log(names);
+	console.log(names.length);			// 멤버 변수
+	let f = function() {};
+</script>
+	<button onclick = "f()">실행</button>
+	<button onclick = "f2()">실행</button>
+</body>
+</html>

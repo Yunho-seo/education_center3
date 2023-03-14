@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>출력</title>
+<script>
+	alert("자바스크립트 테스트");
+	console.log(5+6);	// 개발자 도구의 콘솔(console)에 출력됨.
+	var a1 = 20;		// 변수 선언 - 자바스크립트에서는 데이터타입을 지정하지 않음.
+	console.log(isNaN(a1));
+</script>
+</head>
+<body>
+	<h1> 자바스크립트 출력 대상 : browser, log, dialog </h1>
+	<p id="demo"> 내용출력 </p>		<!-- 아이디는 페이지 내에서 중복되면 안된다. -->
+	<!-- 이벤트 지정함수는 함수 앞에 on이 붙고, 이벤트 이름이 붙는다. -->
+	<button type="button" onclick="document.write(5+6)"> 실행 </button>
+</body>
+</html>

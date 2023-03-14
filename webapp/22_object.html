@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var person = {		// 데이터타입 적용 X(미적용)
+		name:'대전',
+		phone: '010-1111-2222',
+		gender: 'man',
+		addr: 'seoul'
+	};
+	alert(person.name);
+	var mem2 = {};		// 빈 클래스를 선언, 실시간으로 멤버변수를 추가, 삭제하는 것이 가능.
+	mem2.name = '대전';
+	mem2.phone =  '010-1111-2222';
+	mem2.gender = 'man';
+	mem2.addr = 'seoul';
+	mem2.sex = 'm';
+	alert(mem2.name);
+	console.log(mem2['name']);	// 키 값으로 접근 가능
+	delete mem2['addr'];	// 메모리 해제
+
+	function vehicle(name, maker){		// 함수의 매개변수가 생성자 역할을 하도록 한 것.
+		this.name = name;
+		this.maker = maker;
+	}
+	let car1 = new vehicle('소나타', '현대');	// 동적 메모리 할당
+	let car2 = new vehicle('산타페', '기아');
+	
+	car2.name2 = '개발자'; // 처럼 실시간 출력이 가능
+	console.log(car1.name);
+	console.log(car2.name);
+	console.log(car2.name2);
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

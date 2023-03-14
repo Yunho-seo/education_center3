@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="text" id="inputMsg"/>
+<button onclick="send()" onmouseout="check()">전송</button>
+<button onclick="view()">보기</button>
+<script>
+	
+	var msgs=[];
+	var send=function(){
+		var msg=document.querySelector("#inputMsg").value;	// value는 입력된 값
+		msgs.push(msg);
+		alert("배열에 저장했습니다.");
+		document.querySelector("#inputMsg").value="";
+	
+	};
+	var view=function(){
+		document.write(msgs);
+	};
+
+	// 문제 : 마우스가 전송버튼에서 나가면 console에 배열에 있는 내용을 출력하는 함수 만들어 작동시키기
+	var check=function(){
+		console.log(msgs);
+		console.log(msgs.toString());
+	};
+	
+</script>
+</body>
+</html>

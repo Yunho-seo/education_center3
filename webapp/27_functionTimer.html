@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#myConsole{		/* css를 ID에 적용하고 싶은 경우 */
+		border : 1px solid red;
+	}
+</style>
+
+</head>
+<body>
+<div id="myConsole"></div>
+<script>
+	// 싱글 스레드: 비동기 작동방식
+	// 스레드 : CPU는 빠르기에 시분할로 나누어져 동시에 작동하는 프로세스
+	var count=0;
+	document.querySelector("#myConsole").innerText=count;
+	
+	setInterval(function(){		/* 주기적으로 함수를 호출하고 싶은 경우 (ms로 표현, 1초 : 1000 ms) */
+		count = count + 1;
+		document.querySelector("#myConsole").innerText=count;
+	}, 1000);
+
+</script>
+</body>
+</html>

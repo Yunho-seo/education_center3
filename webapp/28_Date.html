@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>6 number specify year, month, day, hour, minute and second:</p>
+	<p id="demo1"></p></br>
+	<p id="demo2"></p></br>
+	<p id="demo3"></p></br>
+	<script>
+	// Date(날짜) + Time => DateTime()
+	// 자바스크립트는 Date로 사용
+	// const는 상수화 : 값을 변경하거나 다른 객체로 수정하는 것이 불가
+	// var(전역범위 내), let(블록 범위 내), const(상수화)
+	// 문자열도 아니고 숫자도 아니고 특별한 형태로 연산
+	// 입력은 문자열 내부에서는 날짜형으로 사용
+	const d = new Date(2018, 11, 24, 10, 33, 30);		// 클래스 인스턴스
+	document.getElementById("demo1").innerHTML = d;		// innerText  <div color="red">출력</div>
+	document.getElementById("demo2").innerHTML =
+		new Date("2015-03-25T12:00:00-06:00");
+	const msec = Date.parse("March 21, 2012");			// parse : 다른 형태의 날짜 데이터를 변형(변환)하기 위해.
+	document.getElementById("demo3").innerHTML = msec;
+	console.log(d.getMonth());		// getDate(), getHours(), getMinutes(), getSeconds()
+	
+	var myName = "대한민국";
+	var myAddr = "서울";
+	var info = "이름:" + myName + " 주소:" + myAddr;		// 문자열 -> 이진수 -> 정렬이 가능 -> + 연산
+	// %s, %i, %d => $로 대체 (데이터 타입 미지정) 
+	// 템플릿 문자열
+	var info2 = `이름:${myName + "님"} 주소:${myAddr}`;
+	
+	console.log(info);
+	console.log(info2);
+	
+	</script>
+</body>
+</html>

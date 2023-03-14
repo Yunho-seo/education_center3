@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<button onclick="move()">오른쪽으로 움직이기</button>
+<button onclick="moveback()">왼쪽으로 움직이기</button>
+<button onclick="up()">위로 움직이기</button>
+<button onclick="down()">아래로 움직이기</button>
+<button onclick="black()">border 초기화</button>
+<button onclick="greencolor()">border 바꾸기</button>
+<button onclick="toggle()">경계컬러 온오프</button>
+<!-- webp 형식 : gif(애니메이션), png(투명), jpg 기능을 합하고 압축률을 높여서 작은 사이즈로 서비스 -->
+<img id="kim" width="500" border="10px" src="images/gom.jpg" alt="이미지 없음" />
+<script>
+	var color = "green";
+	var mLeft = 0;
+	var mUp = 0;
+	var move = function(){
+		mLeft += 10;
+		document.querySelector("#kim").style.marginLeft = mLeft + "px";
+	};
+	
+	// 거꾸로 가는 버튼 만들기
+	var moveback = function(){
+		mLeft -= 10;
+		document.querySelector("#kim").style.marginLeft = mLeft + "px";
+	};
+	
+	// 위로, 아래로 움직이는 버튼 만들기
+	var up = function(){
+		mUp -= 10;
+		document.querySelector("#kim").style.marginTop = mUp + "px";
+	};
+	
+	var down = function(){
+		mUp += 10;
+		document.querySelector("#kim").style.marginTop = mUp + "px";
+	};
+	
+	var black = function(){
+		document.querySelector("#kim").style.borderColor="black";
+	};
+	
+	// border 색깔을 녹색으로 바꾸기
+	// bordercolor="green" 
+	var greencolor = function(){
+		document.querySelector("#kim").style.borderColor="green";
+	};
+	
+	// 한번 누르면 그린, 다시 누르면 노란색으로 변하는 버튼 만들기 ()
+	var color = "green";
+	var toggle = function() {
+		if(color="green") {
+			color = "yellow";
+		}
+		else{
+			color="green";
+		}
+		document.querySelector("#kim").style.borderColor=color;
+	}
+	
+	
+</script>
+</body>
+</html>

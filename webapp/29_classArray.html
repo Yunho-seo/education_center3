@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	// 자바 : 클래스 배열 : Json 객체 => String으로 변환해서 송수신, REST 방식으로 프로그래밍되는 모든 곳
+	var members= [
+		{num:1, name:"대한이", addr:"아산시"},
+		{num:2, name:"한국이", addr:"천안시"},
+		{num:3, name:"민국이", addr:"대전시"}
+	];
+	members[2].addr = "동물원";
+	console.log(members);
+	
+	var friend={
+			name:"꿈이뤄",
+			hobby:["당구", "영화감상", "공부"],
+			sing:function(){
+				console.log("노래를 불러요!");
+				return "완료";
+			}
+		};
+	friend.sing();
+	var frs = friend.sing();		// 함수는 1급객체, 함수도 객체
+	console.log("함수가 리턴한 값" + frs);
+	
+	
+	// 문제 : friend 3개로 구성된 배열을 만들고 2번째 데이터의 sing() 함수 호출
+	var classarray= [friend, friend, friend];
+	classarray[1].sing();
+	
+	
+</script>
+</body>
+</html>

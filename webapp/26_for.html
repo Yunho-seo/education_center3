@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	// 함수적 프로그래밍 (for문을 생략)
+	var isEven = function(x) {
+		return (x%2) === 0;		// '==='는 값을 비교, '=='는 주소를 비교
+	}
+	console.log([2, 22, 36].every(isEven));		// 함수를 매개변수로 요구하는 every, 모두가 짝수여야 True (every)
+	console.log([1, 22, 35].some(isEven));		// 하나라도 짝수라면, True (some)
+	
+	var x = ['a', 'b', 'c', 'd', 'e', 'f'];
+	for(var entry of x.entries()) {
+		console.dir(entry);
+	}
+	
+	var numbers = [1, 2, 3, 4, 5, 7, 9, 12];
+	console.log(numbers.filter(isEven));		// 선택, 필터링해서 짝수인 수만 검출, 필터는 매개변수가 하나인 함수를 요구
+	
+	var x = ['a', 'b', 'foo', 'd', 'e'];
+	console.log(x.find(function(item) {			// findIndex
+		return item.length > 1;
+	}));
+	
+	var x = ['a', 'b', 'c'];
+	x.forEach(function(item, index) {			// forEach : 매개변수 2개인 함수를 요구, 'a'일때 a는 item으로, 0은 index로 들어감)
+		console.log('item at ' + index + ' = ' + item);
+	});
+	
+	// 주소값으로 정렬 : sort()
+	// 데이터타입에 따라 큰 경우를 리턴해주는 함수를 작성해서 전달하면 정상적으로 작동
+   	var numericComparison_asc= function(x, y){
+      	return x - y;
+    };
+    
+	var x =[52, 7, 14, 22, 9];
+    console.log(x.sort(numericComparison_asc)); // 오름차순, 오버로딩, default매개변수
+   
+    var numericComparison_desc = function(x, y){
+       return y - x;
+    };
+    console.log(x.sort(numericComparison_desc)); // 내림차순
+	
+	// Map : 함수를 각 데이터에 적용 (모든 데이터에 대해 연산을 수행해야 할 때)
+	var numbers = [1, 2, 3, 4];
+	var squares = numbers.map(function(x) { return x * x ;});
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

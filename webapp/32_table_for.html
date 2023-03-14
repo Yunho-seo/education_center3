@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+/*
+document.write("<table>");
+for(dan=1; dan<=9; dan++) {
+	document.write("<tr>");
+	for(i=1; i<=9; i++){
+		document.write("<td>");
+		document.write(dan + " * " +  i + " = " + (dan*i));
+		document.write("</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+*/
+
+// 문제 : 123, 456, 789단 -> 세 단으로 쌓아 출력
+document.write("<table>");
+for(dan=1; dan<=9; dan++) {
+	document.write("<tr>");
+	for(i=1; i<=3; i++){
+		document.write("<td>");
+		document.write(i + " * " +  dan + " = " + (dan*i));
+		document.write("</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+document.write("</br>");
+
+
+document.write("<table>");
+for(dan=1; dan<=9; dan++) {
+	document.write("<tr>");
+	for(i=4; i<=6; i++){
+		document.write("<td>");
+		document.write(i + " * " +  dan + " = " + (dan*i));
+		document.write("</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+document.write("</br>");
+
+
+document.write("<table>");
+for(dan=1; dan<=9; dan++) {
+	document.write("<tr>");
+	for(i=7; i<=9; i++){
+		document.write("<td>");
+		document.write(i + " * " +  dan + " = " + (dan*i));
+		document.write("</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+document.write("</br>");
+
+
+</script>
+</body>
+</html>
