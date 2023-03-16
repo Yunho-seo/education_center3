@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   <div>
+   <p>
+   <form method="get" action="EmpProcess">
+      <input type="submit" value="회원보기" />
+      <input type="hidden" id="action" name="action" value="select">
+   </form>
+   </div>
+   
+   <h3>입력</h3>
+   <div>
+   <p>
+   <center>
+   <form action="EmpProcess">
+   <table width="40%" border="1">
+   	<caption><h3>회 원 가 입</h3></caption>
+   	<tr>
+   		<th width="30%">번호</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="id" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">이름</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="name" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">급여</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="salary" size="27%"/>
+   		</td>
+   	</tr>
+   </table>
+   <br/>
+   		<table width="40%">
+   		<tr>
+   			<td align="right">
+   			<input type="hidden" id="action" name="action" value="insert">
+   			<input type="submit" value="회원가입"/>
+   			</td>
+   		</tr>
+   </table>
+   </form>
+   
+   <form action="EmpProcess">
+   <table width="40%" border="1">
+   	<caption><h3>회원정보 수정</h3></caption>
+   	<tr>
+   		<th width="30%">번호</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="id" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">이름</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="name" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">급여</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="salary" size="27%"/>
+   		</td>
+   	</tr>
+   </table>
+   <br/>
+   		<table width="40%">
+   		<tr>
+   			<td align="right">
+   			<input type="hidden" id="action" name="action" value="update">
+   			<input type="submit" value="수정"/>
+   			</td>
+   		</tr>
+   </table>
+   </form>
+
+<div>   
+   <form action="EmpProcess">
+	<table width="40%" border="1">
+	    <caption><h3>회원 삭제</h3></caption>
+	    <tr>
+	        <th width="30%">이름</th>
+	        <td width="70%" align="center">
+	            <input type="text" name="name" size="27%"/>
+	        </td>
+	    </tr>
+	</table>
+	<br/>
+	<table width="40%">
+	    <tr>
+	        <td align="right">
+	            <input type="hidden" id="action" name="action" value="delete">
+	            <input type="submit" value="삭제"/>
+	        </td>
+	    </tr>
+	</table>
+   
+   </form>
+   </center>
+</div>
+   
+<!-- 번호로 이름과 급여를 수정하는 update 화면 설계 -->
+<!-- 이름으로 삭제하는 화면 설계 -->
+</body>
+</html>
+
+<!-- sungjuk 데이터베이스의 student에 대해 CRUD하는 웹 프로그램 작성 -->
+<!-- JSP로는 화면설계, 총 메뉴를 생성하고 데이터 접속과 데이터 리턴은 servlet으로 작성 -->

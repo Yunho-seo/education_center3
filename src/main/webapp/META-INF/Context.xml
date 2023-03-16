@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/mariaconn" auth="Container"
+		type="javax.sql.DataSource"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mariadb://localhost:3306/daejeon?autoReconnect=true"
+		username="root"
+		password="acorn1234"
+		maxActive="100"
+		maxIdle="30"
+		maxWait="10000"
+		removeAbandoned="true"
+		removeAbandonedTimeout="60">
+		</Resource>
+	<Resource name="jdbc/mariasungjuk" auth="Container"
+		type="javax.sql.DataSource"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mariadb://localhost:3306/sungjuk?autoReconnect=true"
+		username="root"
+		password="acorn1234"
+		maxActive="100"
+		maxIdle="30"
+		maxWait="10000"
+		removeAbandoned="true"
+		removeAbandonedTimeout="60">
+		</Resource>
+</Context>

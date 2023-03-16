@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   <div>
+   <p>
+   <form method="get" action="StudentProcess">
+      <input type="submit" value="조회" />
+      <input type="hidden" name="action" value="select">
+   </form>
+   </div>
+   
+   <h3>입력</h3>
+   <div>
+   <p>
+   <center>
+   <form action="StudentProcess">
+   <table width="40%" border="1">
+   	<caption><h3>회 원 가 입</h3></caption>
+   	<tr>
+   		<th width="30%">이름</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="name" size="27%"/>
+   		</td>
+   	</tr>
+   	   	<tr>
+   		<th width="30%">국어</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="kor" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">수학</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="mat" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">영어</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="eng" size="27%"/>
+   		</td>
+   	</tr>
+   </table>
+   <br/>
+   		<table width="40%">
+   		<tr>
+   			<td align="right">
+   			<input type="hidden" name="action" value="insert">
+   			<input type="submit" value="등록"/>
+   			</td>
+   		</tr>
+   </table>
+   </form>
+   
+   <form action="StudentProcess">
+   <table width="40%" border="1">
+   	<caption><h3>회원정보 수정</h3></caption>
+   	<tr>
+   		<th width="30%">이름</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="name" size="27%"/>
+   		</td>
+   	</tr>
+   	   	<tr>
+   		<th width="30%">국어</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="kor" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">수학</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="mat" size="27%"/>
+   		</td>
+   	</tr>
+   	<tr>
+   		<th width="30%">영어</th>
+   		<td width="70%" align="center">
+   		<input type="text" name="eng" size="27%"/>
+   		</td>
+   	</tr>
+   </table>
+   <br/>
+   		<table width="40%">
+   		<tr>
+   			<td align="right">
+   			<input type="hidden" name="action" value="update">
+   			<input type="submit" value="수정"/>
+   			</td>
+   		</tr>
+   </table>
+   </form>
+
+<div>   
+   <form action="StudentProcess">
+	<table width="40%" border="1">
+	    <caption><h3>회원 삭제</h3></caption>
+	    <tr>
+	        <th width="30%">이름</th>
+	        <td width="70%" align="center">
+	            <input type="text" name="name" size="27%"/>
+	        </td>
+	    </tr>
+	</table>
+	<br/>
+	<table width="40%">
+	    <tr>
+	        <td align="right">
+	            <input type="hidden" name="action" value="delete">
+	            <input type="submit" value="삭제"/>
+	        </td>
+	    </tr>
+	</table>
+   
+   </form>
+   </center>
+</div>
+</body>
+</html>
