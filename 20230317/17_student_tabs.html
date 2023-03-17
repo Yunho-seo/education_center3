@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">학생 정보 조회</a></li>
+    <li><a href="#tabs-2">학생 정보 입력</a></li>
+    <li><a href="#tabs-3">학생 정보 수정</a></li>
+    <li><a href="#tabs-4">학생 정보 삭제</a></li>
+  </ul>
+  <div id="tabs-1">
+    <form method="get" action="SungjukServlet">	<!-- 액션 이름은 서블릿 파일 이름 -->
+    	<P>
+    		<input type="submit" value="학생조회" />
+    		<input type="hidden" name="action" value="select" />
+    	</P>
+    </form>
+  </div>
+  
+   <div id="tabs-2">
+    <form method="get" action="SungjukServlet">	<!-- 액션 이름은 서블릿 파일 이름 -->
+    	<table>
+    		<tr><td>
+    			입력할 학생의 정보를 입력하세요
+    		</td></tr>
+    		<tr><td>이름 : <input type="text" name="name"></td></tr>
+    		<tr><td>국어 : <input type="text" name="kor"></td></tr>
+    		<tr><td>수학 : <input type="text" name="mat"></td></tr>
+    		<tr><td>영어 : <input type="text" name="eng"></td></tr>
+    		<tr><td>학교코드 : <input type="text" name="schoolcode" /></td></tr>
+    		
+    		<tr><td><input type="submit" value="학생등록" />
+    				<input type="hidden" name="action" value="insert" /></td></tr>
+    	</table>
+    </form>
+  </div>
+  <div id="tabs-3">
+		<form method="get" action="SungjukServlet">
+			<table>
+				<tr><td>
+				수정할 학생의 정보를 입력하세요.
+				</td></tr>
+				<tr><td><input type = "text"   name="name" placeholder="이름"></td></tr>
+				<tr><td><input type = "text"   name="chname" placeholder="변경할 이름"></td></tr>
+				<tr><td><input type = "submit" style="margin-left:300px" value="학생수정">
+						<input type = "hidden" id="action" name="action" value="update"></td></tr>
+			</table>
+		</form>
+	</div>
+
+	<div id="tabs-4">
+		<form method="get" action="SungjukServlet">
+			<table>
+				<tr><td>
+				삭제할 학생의 정보를 입력하세요.
+				</td></tr>
+				<tr><td><input type = "text" name="name" placeholder="이름"></td></tr>
+				<tr><td><input type="submit" style="margin-left: 300px" value="학생삭제">
+						<input type="hidden" id="action" name="action" value="delete"></td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
