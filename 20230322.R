@@ -422,3 +422,11 @@ subset(mtcars, select=c(mpg, cyl, am), subset=(mpg>20))
 subset(mtcars, subset= (am == 0 & (cyl==4 | cyl==6)), select = c(mpg) )
 colMeans(subset(mtcars, subset= (am == 0 & (cyl==4 | cyl==6)), select = c(mpg)))
 
+       
+# 과제 (20230322) :
+(revenue_cube <-
+    tapply(sales_fact$amount,
+           sales_fact[ , c("prod", "month", "year", "loc")],  # 데이터를 4차원으로 확인
+           FUN = function(x){return(sum(x))}))
+       
+아래 소스를 (4차원 행렬) 그림으로 표현 (그리기)
