@@ -23,3 +23,5 @@
 03.21 => R 실습 (매트릭스, 벡터, 매트릭스 연산, Array, Data.frame, 정규분포, 히스토그램, plot, list, 범주화)
 
 03.22 => R 실습 (apply, 사분위수, factor, 범주화, dummy, 정규화(min-max, z-점수), search, subset)
+
+03.23 => R 실습 (파이프, 데이터베이스 연결)
