@@ -25,3 +25,5 @@
 03.22 => R 실습 (apply, 사분위수, factor, 범주화, dummy, 정규화(min-max, z-점수), search, subset)
 
 03.23 => R 실습 (파이프, 데이터베이스 연결)
+
+03.24 => R 실습 (Graphic, 선형/비선형 회귀, 문제 풀기)
