@@ -506,7 +506,7 @@ barplot(gender_resident, beside=T,
 densityplot( ~ age, data=data2, groups = job2,
               plot.point=T, auto.key=T)
 
-# 문제15) 성별에 따른 직급별 구매비용을 시각화
+# 문제15) 성별에 따른 직급별 구매비용을 시각화  ( 좀 이상함 )
 densityplot( ~ price | factor(position), data=data2,
             groups = gender, plot.points=T, auto.key=T)
 
