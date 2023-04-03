@@ -1,4 +1,4 @@
-# education_center
+# education_center3
 
 03.06 => 성적출력(관리) 프로그램, DBMS 설치(Mariadb, HeidiSQL), SQL문 실습, DML, DDL, 함수
 
